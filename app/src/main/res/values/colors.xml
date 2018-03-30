@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="titleProductDisplay">#000000</color>
+    <color name="tabIndicatorColor">#FF0000</color>
+    <color name="tabTextSelectColor">#FF0000</color>
+    <color name="tabTextColor">#FFA54F</color>
+    <color name="appBackground">#FFFFFF</color>
+    <color name="vpBackground">#EDEDED</color>
+    <color name="productNameColor">#FFFFFF</color>
+    <color name="productLikeAndCommentColor">#000000</color>
+</resources>
