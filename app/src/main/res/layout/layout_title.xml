@@ -2,15 +2,17 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
+    android:layout_height="@dimen/title_height"
+    android:background="@color/appBackground"
     >
 
     <ImageView
         android:id="@+id/iv_brand"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
+        android:layout_width="@dimen/title_pic_height"
+        android:layout_height="@dimen/title_pic_width"
+        android:layout_marginLeft="@dimen/title_pic_margin_left"
         android:layout_centerVertical="true"
-        android:src="@drawable/icon_mercari"/>
+        android:src="@drawable/icon_lalago"/>
     
     <TextView
         android:id="@+id/tv_brand"
@@ -18,6 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_toRightOf="@+id/iv_brand"
+        android:layout_marginLeft="@dimen/title_text_margin_left"
         android:textColor="@color/titleProductDisplay"
         android:text="@string/app_name"/>
 

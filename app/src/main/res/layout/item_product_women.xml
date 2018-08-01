@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/image_margain_bottom"
         android:scaleType="fitCenter"
-        fresco:placeholderImage="@drawable/icon_mercari"/>
+        fresco:placeholderImage="@drawable/icon_lalago"/>
 
     <ImageView
         android:id="@+id/iv_women_product_out"
@@ -91,7 +91,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="@dimen/text_product_name_margin_bottom"
         android:layout_alignBottom="@+id/iv_women_product"
-        android:layout_marginLeft="@dimen/image_margain_left"
+        android:layout_marginLeft="@dimen/image_text_margain_left"
         android:layout_height="wrap_content"
         android:textSize="@dimen/text_product_like_size"
         android:text="@string/product_name_default"

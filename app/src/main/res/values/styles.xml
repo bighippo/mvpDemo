@@ -8,9 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="MercariTheme" parent="Theme.AppCompat.NoActionBar">
+    <style name="lalagoTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="startTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/start</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 
 </resources>

@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Mercari</string>
+    <string name="app_name">LALAGO</string>
     <string name="product_like_count_default">0</string>
     <string name="product_comment_count_default">0</string>
-    <string name="product_name_default">Mercari</string>
+    <string name="product_name_default">lalago</string>
     <string name="product_price_default">$ 100</string>
 </resources>

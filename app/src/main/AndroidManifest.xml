@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.mercari"
+<manifest package="com.lalago"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/icon_mercari"
+        android:icon="@drawable/icon_lalago"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/MercariTheme">
+        android:theme="@style/lalagoTheme">
         <activity android:name=".activity.ProductDisplayActivity"
-                  android:configChanges="screenSize|keyboardHidden|orientation">
+                  android:configChanges="screenSize|keyboardHidden|orientation"
+                  android:theme="@style/startTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
