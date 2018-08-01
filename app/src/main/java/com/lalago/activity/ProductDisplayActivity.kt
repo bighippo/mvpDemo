@@ -5,10 +5,10 @@ import android.support.v7.app.AppCompatActivity
 
 import com.lalago.R
 import com.lalago.adapter.ProductFragmentAdapter
-import com.lalago.frament.ProductAllFragment
-import com.lalago.frament.ProductBaseFragment
-import com.lalago.frament.ProductManFragment
-import com.lalago.frament.ProductWomenFragment
+import com.lalago.fragment.ProductAllFragment
+import com.lalago.fragment.ProductBaseFragment
+import com.lalago.fragment.ProductManFragment
+import com.lalago.fragment.ProductWomenFragment
 import com.lalago.retrofit.RetrofigConfig
 import com.lalago.retrofit.RetrofitHelper
 import kotlinx.android.synthetic.main.activity_product_display.*

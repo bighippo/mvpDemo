@@ -1,4 +1,4 @@
-package com.lalago.frament
+package com.lalago.fragment
 
 import android.content.Context
 import android.os.Bundle

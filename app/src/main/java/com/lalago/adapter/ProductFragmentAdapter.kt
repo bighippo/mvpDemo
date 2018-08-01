@@ -3,7 +3,7 @@ package com.lalago.adapter
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
-import com.lalago.frament.ProductBaseFragment
+import com.lalago.fragment.ProductBaseFragment
 
 
 /**

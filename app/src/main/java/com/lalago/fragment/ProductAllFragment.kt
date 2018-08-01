@@ -1,4 +1,4 @@
-package com.lalago.frament
+package com.lalago.fragment
 
 import android.content.Context
 import android.os.Bundle
@@ -11,37 +11,37 @@ import android.widget.Toast
 import com.lalago.R
 import com.lalago.adapter.ProductAdapter
 import com.lalago.model.ProductModel
-import com.lalago.presenter.ProductWomenPresenter
+import com.lalago.presenter.ProductAllPresenter
 import com.lalago.util.GridSpacingItemDecoration
-import com.lalago.view.ProductWomenView
+import com.lalago.view.ProductAllView
 import kotlinx.android.synthetic.main.fragment_product.*
 
 /**
  * Created by tangxutao on 2018/7/30.
  */
-class ProductWomenFragment : ProductBaseFragment() {
-    private lateinit var mWomenModels : List<ProductModel>
-    private var mWomenPrenster = ProductWomenPresenter()
+class ProductAllFragment : ProductBaseFragment() {
+    private lateinit var mAllModels : List<ProductModel>
+    private var mAllPrenster = ProductAllPresenter()
     private val mColumn = 2
     private var mLastPosition = 0
 
     override fun getFragmentName(): String {
-        return "Women"
+        return "All"
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_product, container, false)
-
+        return  inflater.inflate(R.layout.fragment_product, container,false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        mWomenPrenster.attachView(mWomenView)
+
+        mAllPrenster.attachView(mAllView)
 
         initData()
     }
 
     private fun initView() {
-        val adapter = ProductAdapter(activity as Context, mWomenModels)
+        val adapter = ProductAdapter(activity as Context, mAllModels)
 
         //you can add different layoutManager to realize different feature
         val layoutManager = GridLayoutManager(activity, mColumn)
@@ -52,7 +52,7 @@ class ProductWomenFragment : ProductBaseFragment() {
 
         val gap = activity!!.resources.getDimensionPixelSize(R.dimen.gird_itme_gap)
 
-        lalago_recycler_view.addItemDecoration(GridSpacingItemDecoration(mColumn, gap,true))
+        lalago_recycler_view.addItemDecoration(GridSpacingItemDecoration(mColumn, gap, true))
 
         adapter.setOnRecyclerItemClick(object : ProductAdapter.OnRecyclerItemClick {
             override fun onItemClick(view: View, position: Int) {
@@ -71,19 +71,19 @@ class ProductWomenFragment : ProductBaseFragment() {
         })
     }
 
-    private var mWomenView = object : ProductWomenView {
+    private var mAllView = object : ProductAllView {
         override fun onError(result: String) {
             Toast.makeText(activity, result, Toast.LENGTH_SHORT).show()
         }
 
         override fun onSuccess(model: List<ProductModel>) {
-            mWomenModels = model
+            mAllModels = model
 
             initView()
         }
     }
 
-    private fun initData(){
-        mWomenPrenster.getWomenProduct()
+    private fun initData() {
+        mAllPrenster.getAllProduct()
     }
 }
